@@ -11,4 +11,6 @@ sd
 2
 #z macina
 as
-
+#zmiana z marcina 2 
+znow cos dodalem
+>>>>>>> marcin

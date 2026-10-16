@@ -3,7 +3,8 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				sh 'echo 123 >test.html'
+				checkout scm
+				sh 'echo 123 > test.html'
 			}
 		}
 		stege('Test') {
@@ -11,6 +12,7 @@ pipeline {
 				checkout scm
 				sh 'test -f test.html'
 			}
+		
 		}
 	}
 }

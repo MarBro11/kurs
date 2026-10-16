@@ -27,4 +27,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
       - uses: actions/download-artifact@v8
-      - run: test -h test.html 
+      - run: test -f test.html 

@@ -21,6 +21,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
   test:
+    needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v8

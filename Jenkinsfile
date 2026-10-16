@@ -7,7 +7,7 @@ pipeline {
 				sh 'echo 123 > test.html'
 			}
 		}
-		stege('Test') {
+		stage('Test') {
 			steps {
 				checkout scm
 				sh 'test -f test.html'
